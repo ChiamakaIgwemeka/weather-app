@@ -1,5 +1,8 @@
+// Load environment variables from .env file
+require('dotenv').config();
+
 // API key and base URL for OpenWeatherMap API
-const apiKey = "f53c4701ae092fbcb6da40d9185fd2e2";
+const apiKey = process.env.OPENWEATHERMAP_API_KEY;
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
 // Get references to DOM elements
